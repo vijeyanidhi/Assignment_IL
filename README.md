@@ -1,5 +1,5 @@
 # Assignment_IL
-Download the source code and save it.
+Download the Program_1.py and Program_2.py files and save it.
 
 Place the “character_mapping.txt” and “word_corpus.txt” file in the same folder or edit the base path in the programs to the location and then compile and run it using any python3 compiler without any command line arguments.
 
