@@ -1,0 +1,25 @@
+Additional info
+How the program works
+Program 1
+	A dictionary is built using the inputs from the character_mapping.txt file. Let’s call it lst
+	The lst is sorted in descending order to ensure that proper replacement is done i.e. without ordering, the program would have replaced o’ before o’1 to o’5 etc meaning wrong string replacement would occur but with ordering, o’5 to o’1 would be replaced before o’ so it would be the proper string replacements.
+	The lst is sent to another function which read the inputs from the word_corpus.txt and checks if it contains any substring stored in lst. This is done in brute force method.
+	The fully correct string along with its frequency is made into a dictionary and send back to be written in word_frequency.txt file
+Program 2
+	Inputs are taken and stored in a list
+	The data from the word_frequency.txt file is read and built into a dictionary.
+	The list is traversed and the phrases matching the current input are appended to a new tuple.
+	The tuples are then printed as per the required format.
+Methods
+	For character replacement “in” statement is used.
+	Tried using regex as a method to reduce the processing power usage but it allowed only 3370 lines instead of the 3530 lines which were needed to be replaced.
+	For getting the word prediction string. Find method is used it gives the index of the first occurrence of the required substring from the given string and if it given as 0 it will be the start of the string and thus satisfying the requirements.
+
+Coding pattern
+	lowerCamelCasing for variables
+	UpperCamelCasing for functions
+	Basepath is set to empty for now as the programs have used the files in the same directory
+	Filenames are self-explanatory.
+
+WARNING
+	Duplicates were found in the word_corpus.txt file since the instructions were to assume the necessary details, the latest was taken and the previous values were discarded.
